@@ -16,11 +16,11 @@ else:
     exit()
 if not path.exists(path.join(dirname, "thundergbm", path.basename(lib_path))):
     copyfile(lib_path, path.join(dirname, "thundergbm", path.basename(lib_path)))
-setuptools.setup(name="amd_thundergbm",
+setuptools.setup(name="thundergbm",
                  version="0.3.16",
                  packages=["thundergbm"],
                  package_dir={"python": "thundergbm"},
-                 description="A Fast GBM Library on GPUs and CPUsi with ROCm support",
+                 description="A Fast GBM Library on GPUs and CPUs with ROCm support",
                  long_description="""The mission of ThunderGBM is to help users easily and efficiently apply GBDTs and Random Forests to solve problems. ThunderGBM exploits GPUs and multi-core CPUs to achieve high efficiency""",
                  long_description_content_type="text/plain",
                  license='Apache-2.0',
